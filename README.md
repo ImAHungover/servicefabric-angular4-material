@@ -1,7 +1,7 @@
 # servicefabric-angular4-material
 ASP.Net Core stateless service with Angular 4 + Material desing
 
-<b>Prerequisites
+##Prerequisites
 
 Make sure you have .NET Core 1.1.1, Service Fabric Tools latest, Node.js 6+ and Angular CLI 1.0 installed.
 
@@ -18,7 +18,7 @@ Tools -> Options -> External Web Tools
 (Angular CLI and generated project have dependencies that require Node 6.9.0 or higher, together with NPM 3 or higher.)
 
 
-<b> Create ASP.NET Core Service Fabric application</b>
+## Create ASP.NET Core Service Fabric application
 
 Install the “Microsoft.AspNetCore.StaticFiles” NuGet package
 
@@ -44,7 +44,7 @@ Add to Startup.cs
       app.UseDefaultFiles();
       app.UseStaticFiles();
 ```
-<b>Create angular app</b>
+##Create angular app
 
 Go to the command line and navigate to the directory of your solution file. Then run
 ```npm
@@ -84,12 +84,12 @@ Import MaterialModule in src/app/app.module.ts
   import { MaterialModule } from '@angular/material';
 ```
 
-<b> Add HTML and add CSS</b>
+## Add HTML and add CSS
 
 Add your components and css  in app.component.html & app.component.css
 
  
- <b>+ Optional</b>
+## + Optional
 
 Turn off TypeScriptCompiler in csproj:
 ```xml
