@@ -77,7 +77,7 @@ Add material icons to index.html
 ```html
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
 ```
-Create your custom the in src\assets and include it in angular-cli.json
+Create your custom theme in src\assets and include it in angular-cli.json
 
 Import MaterialModule in src/app/app.module.ts
 ```ts
