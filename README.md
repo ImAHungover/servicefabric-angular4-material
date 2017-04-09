@@ -1,7 +1,7 @@
 # servicefabric-angular4-material
 ASP.Net Core stateless service with Angular 4 + Material desing
 
-##Prerequisites
+## Prerequisites
 
 Make sure you have .NET Core 1.1.1, Service Fabric Tools latest, Node.js 6+ and Angular CLI 1.0 installed.
 
@@ -44,7 +44,7 @@ Add to Startup.cs
       app.UseDefaultFiles();
       app.UseStaticFiles();
 ```
-##Create angular app
+## Create angular app
 
 Go to the command line and navigate to the directory of your solution file. Then run
 ```npm
