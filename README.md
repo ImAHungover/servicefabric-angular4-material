@@ -12,9 +12,9 @@ Make sure you have .NET Core 1.1.1, Service Fabric Tools latest, Node.js 6+ and 
 <a href="https://nodejs.org/en">Nodejs</a>
 
 Add nodejs path to the  <b>External Web Tools</b> in Visual Studio
-<br>
+
 Tools -> Options -> External Web Tools
-<br>
+
 (Angular CLI and generated project have dependencies that require Node 6.9.0 or higher, together with NPM 3 or higher.)
 
 
@@ -45,7 +45,7 @@ Add to Startup.cs
       app.UseStaticFiles();
 ```
 <b>Create angular app</b>
-<br>
+
 Go to the command line and navigate to the directory of your solution file. Then run
 ```npm
     ng new <app name>
@@ -85,7 +85,7 @@ Import MaterialModule in src/app/app.module.ts
 ```
 
 <b> Add HTML and add CSS</b>
-<br>
+
 Add your components and css  in app.component.html & app.component.css
 
  
