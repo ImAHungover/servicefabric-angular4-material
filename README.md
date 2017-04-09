@@ -17,7 +17,10 @@ Tools -> Options -> External Web Tools
 
 (Angular CLI and generated project have dependencies that require Node 6.9.0 or higher, together with NPM 3 or higher.)
 
-
+Install Angular CLI
+```npm
+npm install -g @angular/cli
+```
 ## Create ASP.NET Core Service Fabric application
 
 Install the “Microsoft.AspNetCore.StaticFiles” NuGet package
