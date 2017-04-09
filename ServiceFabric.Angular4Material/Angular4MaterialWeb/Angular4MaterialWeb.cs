@@ -31,7 +31,7 @@ namespace Angular4MaterialWeb
             return new ServiceInstanceListener[]
             {
                 new ServiceInstanceListener(serviceContext =>
-                    new WebListenerCommunicationListener(serviceContext, "ServiceEndpoint", url =>
+                    new WebListenerCommunicationListener(serviceContext, "ServiceEndpoint", (url,listner) =>
                     {
                         ServiceEventSource.Current.ServiceMessage(serviceContext, $"Starting WebListener on {url}");
 
