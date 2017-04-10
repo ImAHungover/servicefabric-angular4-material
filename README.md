@@ -5,7 +5,7 @@ ASP.Net Core stateless service with Angular 4 + Material desing
 
 Make sure you have .NET Core 1.1.1, Service Fabric Tools latest, Node.js 6+ and Angular CLI 1.0 installed.
 
-<a href="https://www.microsoft.com/net/core#windowsvs2017">Visual Studio 2017</a>
+<a href="https://www.microsoft.com/net/core#windowsvs2017">Visual Studio 2017 with Update1</a>
 
 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started">Service Fabric Tools</a>
 
@@ -47,6 +47,10 @@ Add to Startup.cs
       app.UseDefaultFiles();
       app.UseStaticFiles();
 ```
+Expand the Project Properties and open the launchSettings.json and replace the launchUrl to empty string
+
+Set the solution platform to x64 in the solution configuration
+
 ## Create angular app
 
 Go to the command line and navigate to the directory of your solution file. Then run
@@ -55,7 +59,7 @@ Go to the command line and navigate to the directory of your solution file. Then
 ```
 (```<app name>``` equals with .NET Core source folder name)
 
-Then change the “outDir” attribute from “dist” to “wwwroot”
+Then change the “outDir” attribute in angular-cli.json from “dist” to “wwwroot”
 
 Install angular material:
 ```npm
@@ -82,10 +86,27 @@ Add material icons to index.html
 ```
 Create your custom theme in src\assets and include it in angular-cli.json
 
-Import MaterialModule in src/app/app.module.ts
+Import MaterialModul and BrowserAnimationsModule in src/app/app.module.ts
 ```ts
-  import { MaterialModule } from '@angular/material';
+   import { BrowserModule } from '@angular/platform-browser';
+   import { NgModule } from '@angular/core';
+   import { FormsModule } from '@angular/forms';
+   import { HttpModule } from '@angular/http';
+   import { MaterialModule } from '@angular/material';
+   import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 ```
+...
+```ts
+imports: [
+		BrowserModule,
+		FormsModule,
+		HttpModule,
+		MaterialModule.forRoot(),
+		BrowserAnimationsModule
+	],
+...
+
+
 
 ## Add HTML and add CSS
 
